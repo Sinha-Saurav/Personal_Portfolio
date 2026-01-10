@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    background-color: yellow;
+}
