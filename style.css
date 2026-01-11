@@ -2,11 +2,17 @@
     margin:0px;
     box-sizing: border-box;
 }
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
 header{
     position:fixed;
     height: 64.73px;
     width: 100%;
-    background-color: oklch(21% 0.034 264.665);
+    background: rgb(16 24 40 / 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgb(255 255 255 / 0.08);
 }
 .Navigation{
     margin: 0 51px;
@@ -23,10 +29,10 @@ header{
 .nav-btn{
     all: unset;
     color:#ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:600;
     font-size: 18px;
     margin-right: 32px;
+    cursor: pointer;
 }
 .nav-btn:hover{
     color:#1E88E5;
@@ -37,7 +43,59 @@ header{
     font-size: 21px;
     text-decoration: none;
 }
+.btn-holder{
+    display: flex;
+    justify-content: center;
+}
 #toggle-btn{
-    all: unset;
-    
+    padding: 8px;
+    border:none;
+    border-radius: 10px;
+    background-color: oklab(0.278 -0.00750866 -0.0321344);
+    color: white;
+    cursor: pointer;
+}
+.toggle-icon{
+    width:20px;
+    height: 20px;
+    display: block;
+}
+#toggle-btn:hover{
+    background-color: rgb(224 224 224 / 20%) ;
+}
+
+
+#hero{
+    padding-top: 64px;
+    height: 800px;
+    width: 100%;
+    background:linear-gradient(
+        315deg,#172554 10%, #121B2C 90%
+    );
+}
+.main{
+    height: 735px;
+    width:92.7%;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 32px;
+    margin: 0 51px;
+}
+.work-el{
+    color:#50A2FF;
+    background-color: #172950;
+    display: flex;
+    justify-content:space-between;
+    height: 36px;
+    width: 250px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border:none;
+    border-radius: 30px;
+}
+#current-text{
+    font-size:14px;
+}
+#target-icon{
+    font-size: 16px;
 }
