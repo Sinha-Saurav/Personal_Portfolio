@@ -30,7 +30,7 @@ header{
     all: unset;
     color:#ffffff;
     font-weight:600;
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 32px;
     cursor: pointer;
 }
@@ -39,8 +39,8 @@ header{
     text-decoration: underline #1E88E5  ;
 }
 #name-el{
-    font-weight: 700;
-    font-size: 21px;
+    font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
 }
 .btn-holder{
@@ -81,6 +81,16 @@ header{
     padding: 80px 32px;
     margin: 0 51px;
 }
+
+.grid-sec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 3rem;
+}
+@media(width>=64rem){
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .work-el{
     color:#50A2FF;
     background-color: #172950;
@@ -98,4 +108,42 @@ header{
 }
 #target-icon{
     font-size: 16px;
+}
+
+.Intro{
+    color:white;
+    height: 196px;
+    margin-bottom: 32px;
+}
+#Name{
+    height: 144px;
+    font-weight:600;
+    font-size: 72px;
+    margin-bottom: 16px;
+    line-height: 1.0;
+}
+#Name span{
+    background: linear-gradient(to right, oklch(70.7% 0.165 254.624), oklch(71.4% 0.203 305.504));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Intro p{
+    font-size:30px;
+    height: 36px;
+    color:#D1D5DC;
+    outline-color: #808793;
+}
+#bot-svg{
+    color:pink;
+    width:30px;
+    height: 30px;
+    font-size: 30px;
+    vertical-align: middle;
+    transform: translateY(-3px);
+}
+#intro-para{
+    color:#99A1AF;
+    font-size: 20px;
+    height: 84px;
+    margin-bottom: 32px;
 }
