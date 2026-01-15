@@ -33,6 +33,7 @@ header{
     font-size: 16px;
     margin-right: 32px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 .nav-btn:hover{
     color:#1E88E5;
@@ -52,7 +53,7 @@ header{
     border:none;
     border-radius: 10px;
     background-color: oklab(0.278 -0.00750866 -0.0321344);
-    color: white;
+    color: rgb(237, 188, 98);
     cursor: pointer;
 }
 .toggle-icon{
@@ -89,7 +90,9 @@ header{
     column-gap: 3rem;
 }
 @media(width>=64rem){
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .grid-sec{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 .work-el{
     color:#50A2FF;
@@ -113,7 +116,7 @@ header{
 .Intro{
     color:white;
     height: 196px;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 #Name{
     height: 144px;
@@ -124,7 +127,8 @@ header{
 }
 #Name span{
     background: linear-gradient(to right, oklch(70.7% 0.165 254.624), oklch(71.4% 0.203 305.504));
-    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 .Intro p{
@@ -133,7 +137,7 @@ header{
     color:#D1D5DC;
     outline-color: #808793;
 }
-#bot-svg{
+.icon-svg{
     color:pink;
     width:30px;
     height: 30px;
@@ -141,9 +145,72 @@ header{
     vertical-align: middle;
     transform: translateY(-3px);
 }
+#code-svg{
+    color: #55A2FF;
+}
 #intro-para{
     color:#99A1AF;
     font-size: 20px;
     height: 84px;
     margin-bottom: 32px;
+}
+
+.Get-in-touch{
+    height: 75px;
+    display: flex;
+    padding-top: 16px;
+    margin-bottom: 32px;
+}
+.intro-btn{
+    all: unset;
+    margin-right: 20px;
+    padding: 16px 32px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+}
+#touch-btn{
+    background: linear-gradient(to right, oklch(58.103% 0.20821 257.568), oklch(58.895% 0.25959 303.168));
+    transition: transform 0.2s ease;
+}
+#touch-btn:hover{
+    transform: scale(1.05);
+}
+#resume-btn{
+    border: 1.45px solid #99A1AF;
+    transition: transform 0.2s ease;
+}
+#resume-btn:hover{
+    transform: scale(1.05);
+    border-color: #1E88E5;
+    border-width: 2px;
+}
+
+#download-svg{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    transform: translateY(-2px);
+    margin-right: 3px;
+}
+
+#anchor-tags{
+    display: flex;
+    height: 72px;
+    padding-top: 16px;
+}
+
+#anchor-tags a{
+    padding: 16px;
+    background: #131D36;
+    border:none;
+    border-radius: 50%;
+    color:white;
+    box-shadow: 0 0 20px #172554;
+    margin-right: 15px;
+    transition: transform 0.2s ease;
+}
+#anchor-tags a:hover{
+    color:#1E88E5;
+    transform: scale(1.1);
 }
